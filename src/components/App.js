@@ -4,7 +4,7 @@ import { selectSong } from "../actions";
 const App = () => {
   return (
     <div>
-      App
+      <SongList/>
     </div>
   );
 }
