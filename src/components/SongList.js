@@ -5,7 +5,7 @@ class SongList extends Component {
 
   renderList(){
     console.log('inside render list',this.props.songs);
-    this.props.songs.map((song)=>{
+    return this.props.songs.map(song=>{
       return (
         <div className='item' key = {song.title}>
           <div className='right floated content'>
