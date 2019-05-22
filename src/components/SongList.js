@@ -5,7 +5,7 @@ class SongList extends Component {
   renderList(){
     this.props.songs.map((song)=>{
       return (
-        <div className='item ' key = {song.title}>
+        <div className='item' key = {song.title}>
          <div className='right floated content'>
            <button className='ui button primary'>
              Select
