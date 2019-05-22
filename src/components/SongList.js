@@ -2,6 +2,19 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class SongList extends Component {
+  renderList(){
+    this.props.songs.map((song)=>{
+      return (
+        <div className='item ' key = {song.title}>
+         <div classNAme='right floated content'>
+           <button className='ui button primary'>
+             Select
+           </button>
+         </div>
+        </div>
+      );
+    })
+  }
   render(){
     return <div> SongList</div>;
   }
