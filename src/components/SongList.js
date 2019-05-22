@@ -12,15 +12,15 @@ class SongList extends Component {
             <button className='ui button primary'>
               Select
             </button>
-            <div className='content'>{song.title}</div>
           </div>
+          <div className='content'>{song.title}</div>
         </div>
       );
     })
   }
 
   render(){
-    return <div>{this.renderList()}</div>;
+    return <div className='ui divided list'>{this.renderList()}</div>;
   }
 }
 
